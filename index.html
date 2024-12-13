@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+      
+
+    <section class="h-screen flex items-center">
+        <div class="container grid grid-cols-6">
+            <div class=" col-start-2 col-span-4">
+                <div class="filter-box shadow-md p-4">
+                    <div class="search-bar p-3 rounded-lg flex items-center border-b">
+                        <div class="search-icon">
+                            <i class="ri-search-2-line"></i>
+                        </div>
+                        <input type="text" id="search" class="w-full pl-4 outline-none" placeholder="type to search your data">
+                    </div>
+                    <div class="data-item mt-4">
+                        <ul>
+                            <li id="data-item"></li>  
+                            <div id="no-data-message" style="display: none;">Data not found</div>                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+   <script src="main.js"></script>
+</body>
+</html>
